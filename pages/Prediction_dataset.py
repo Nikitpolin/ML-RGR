@@ -30,7 +30,7 @@ if df is not None:
     if button_clicked:
         if model_type is not None:
             if model_type == "Knn":
-                with open('models/knn.pkl', 'rb') as file:
+                with open('ML-RGR/models/knn.pkl', 'rb') as file:
                     knn_model = pickle.load(file)
                 if knn_model.predict(list) == 0:
                     st.success("Астероид не опасен")
@@ -38,7 +38,7 @@ if df is not None:
                     st.success("Астероид опасен")
 
             elif model_type == "Kmeans":
-                with open('models/kmeans.pkl', 'rb') as file:
+                with open('ML-RGR/models/kmeans.pkl', 'rb') as file:
                     kmeans_model = pickle.load(file)
                 if kmeans_model.predict(list) == 0:
                     st.success("Астероид не опасен")
@@ -46,7 +46,7 @@ if df is not None:
                     st.success("Астероид опасен")
 
             elif model_type == "Boosting":
-                with open('models/boosting.pkl', 'rb') as file:
+                with open('ML-RGR/models/boosting.pkl', 'rb') as file:
                     boos_model = pickle.load(file)
                 if boos_model.predict(list) == 0:
                     st.success("Астероид не опасен")
@@ -54,7 +54,7 @@ if df is not None:
                     st.success("Астероид опасен")
 
             elif model_type == "Bagging":
-                with open('models/bagging.pkl', 'rb') as file:
+                with open('ML-RGR/models/bagging.pkl', 'rb') as file:
                     bagg_model = pickle.load(file)
                 if bagg_model.predict(list) == 0:
                     st.success("Астероид не опасен")
@@ -62,7 +62,7 @@ if df is not None:
                     st.success("Астероид опасен")
 
             elif model_type == "Stacking":
-                with open('models/stacking.pkl', 'rb') as file:
+                with open('ML-RGR/models/stacking.pkl', 'rb') as file:
                     stac_model = pickle.load(file)
                 if stac_model.predict(list) == 0:
                     st.success("Астероид не опасен")
@@ -70,7 +70,7 @@ if df is not None:
                     st.success("Астероид опасен")
 
             elif model_type == "MLP":
-                with open('models/mlp.pkl', 'rb') as file:
+                with open('ML-RGR/models/mlp.pkl', 'rb') as file:
                     mlp_model = pickle.load(file)
                 if mlp_model.predict(list) == 0:
                     st.success("Астероид не опасен")
