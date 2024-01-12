@@ -28,7 +28,7 @@ if data is not None:
 
     st.write("---")
 
-    feature = df['hazardous']
+    feature = 'hazardous'
 
     st.title("Тип модели обучения")
     model_type = st.selectbox("Выберите тип", [ 'Knn', 'Kmeans','Boosting', 'Bagging','Stacking', 'MLP' ])
